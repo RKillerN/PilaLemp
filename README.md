@@ -65,9 +65,47 @@ Además, en la directiva "fastcgi_pass", incluiremos la dirección IP de nuestra
 ![image](https://github.com/RKillerN/PilaLemp/assets/146434664/725d1377-9b23-4999-83f9-0f58821743f7)
 ![image](https://github.com/RKillerN/PilaLemp/assets/146434664/f34801d7-cdbe-488e-8c3e-148c9711465e)
 
+## Configuración del servidor MariaDB
+
+El primer paso para la configuración es ajustar el parámetro bind_address en el archivo "50-server.cnf", el cual se encuentra en la ruta "/etc/mysql/mariadb.conf.d/". Este ajuste se realiza para permitir conexiones desde cualquier dirección IP externa al servidor de base de datos MariaDB.
+
+La base de datos y el usuario necesario para la instalación de WordPress ya han sido creados previamente mediante el script de aprovisionamiento. Para permitir que los usuarios desde cualquier dirección IP accedan a las máquinas servidores web mediante el cliente MariaDB, se ha configurado la base de datos de manera que acepte conexiones remotas.
+
+## Instalación de WordPress
 
 
+El primer paso consiste en descargar el recurso mediante el comando wget. Para hacerlo desde la ruta de nuestro archivo "defaults", añadimos la carpeta "wordpress" (/var/www/nnginxNereaCM/wordpress) a la ruta. De esta manera, al realizar modificaciones desde uno de nuestros servidores, se actualizarán automáticamente en los demás. Después de la descarga, ubicamos el archivo en la carpeta compartida y procedemos a descomprimirlo.
 
-Video
+![image](https://github.com/RKillerN/PilaLemp/assets/146434664/44ae8fcd-840f-44d1-b841-4fd3b8a94b11)
+
+A continuación, procedemos a realizar una copia del archivo wp-config-sample.php y lo renombramos como wp-config.php. Posteriormente, editamos dicho archivo, introduciendo la siguiente información, que incluye el nombre de la base de datos creada, el usuario asociado a esa base de datos, la contraseña del usuario, y la dirección IP de nuestro servidor MariaDB, que es la ubicación de la base de datos.
+
+![image](https://github.com/RKillerN/PilaLemp/assets/146434664/8f400d25-1509-49ed-9165-8b43160cdbb4)
+
+
+Finalmente, desde un navegador web, procedemos a completar la instalación de WordPress. Si la configuración es correcta, el sistema nos mostrará la pantalla siguiente:
+![image](https://github.com/RKillerN/PilaLemp/assets/146434664/2e244ab4-b8f5-4c50-95da-e9cd45110424)
+Este paso confirma que la configuración de WordPress se ha realizado de manera exitosa y que el sistema está listo para ser utilizado. A partir de este punto, podemos seguir con la configuración específica de WordPress, como la creación de cuentas de usuario y la personalización del sitio según nuestras necesidades.
+
+En esta pantalla, procedemos a configurar los detalles iniciales de WordPress. Nombramos el título de la página, establecemos un nombre de usuario para el administrador, ingresamos una contraseña segura y proporcionamos una dirección de correo electrónico. Finalmente, para completar el proceso, hacemos clic en la pestaña "Install WordPress".
+
+![image](https://github.com/RKillerN/PilaLemp/assets/146434664/2f3be40b-882e-4571-a578-17dc17d375ad)
+
+### Personalicación de MiWordPress
+
+En la barra lateral de la página de inicio de WordPress, ubicamos la sección llamada "Pages" y hacemos clic en ella. A continuación, seleccionamos la opción "Add New Page".
+
+![image](https://github.com/RKillerN/PilaLemp/assets/146434664/d3e12a26-ef61-41ba-a071-b303272d2d5e)
+Esta serie de pasos nos dirigirá a la interfaz de creación de nuevas páginas en WordPress. Al seleccionar "Add New Page", estamos listos para comenzar a crear y diseñar una nueva página para nuestro sitio web.
+![image](https://github.com/RKillerN/PilaLemp/assets/146434664/11f5c431-8a2f-447f-a26f-9d12f5f5b82d)
+
+Una vez finalizado tendremos Wordpress personalizado. Así se ve una vez después de personalizarlo.
+![image](https://github.com/RKillerN/PilaLemp/assets/146434664/8ae1aeb2-5c05-4a0e-b65d-a18bb79e12d5)
+
+# Conclusión
+
+En conclusión en este proyecto, implementamos una arquitectura de tres capas utilizando la pila LEMP con Nginx, PHP y MariaDB. Configuramos Nginx como balanceador de carga y ajustamos la configuración de los servidores web y MariaDB. Desplegamos WordPress, compartiendo archivos a través de NFS para coherencia entre servidores. La personalización de WordPress destacó la flexibilidad de esta plataforma. En resumen, logramos una implementación escalable y robusta de una aplicación web utilizando la pila LEMP.
+
+#### Screencash
 
 https://drive.google.com/file/d/1iXsMHb-9BO-QVK44BdARj6-Dn9mr1Hgl/view?usp=drive_link
