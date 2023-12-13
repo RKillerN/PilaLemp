@@ -1,4 +1,5 @@
 # PilaLemp tres capas
+Nerea Cerón Muñoz
 
 ## Configuración de Red en el Despliegue con Vagrant: Despliegue de Wordpress en Tres Capas con Nginx
 
