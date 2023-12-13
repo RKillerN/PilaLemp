@@ -1,11 +1,12 @@
 # PilaLemp tres capas
+
 Nerea Cerón Muñoz
 
 ## Configuración de Red en el Despliegue con Vagrant: Despliegue de Wordpress en Tres Capas con Nginx
 
 En esta práctica, llevaremos a cabo un despliegue en tres capas utilizando Nginx. La primera capa albergará el balanceador de carga de Nginx, la segunda capa contendrá dos servidores web con el motor PHP en una máquina independiente, y la última capa albergará el servidor de base de datos. Durante este despliegue, configuraremos y desplegaremos Wordpress. Ya cuentan con respaldo con script con todos los paquetes necesarios descargados para este despliegue.
 
-## 1. COnfiguración del balanceador de servidores nginx
+## 1. Configuración del balanceador de servidores nginx
 
 
 Dentro de la ruta /etc/nginx/conf.d, se crea un archivo de configuración específico para tel balanceador en Nginx. Este archivo contendrá las directivas y configuraciones necesarias para definir cómo Nginx gestionará la carga entre los servidores. 
