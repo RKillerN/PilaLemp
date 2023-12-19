@@ -108,6 +108,6 @@ Una vez finalizado tendremos Wordpress personalizado. Así se ve una vez despué
 
 En conclusión en este proyecto, implementamos una arquitectura de tres capas utilizando la pila LEMP con Nginx, PHP y MariaDB. Configuramos Nginx como balanceador de carga y ajustamos la configuración de los servidores web y MariaDB. Desplegamos WordPress, compartiendo archivos a través de NFS para coherencia entre servidores. La personalización de WordPress destacó la flexibilidad de esta plataforma. En resumen, logramos una implementación escalable y robusta de una aplicación web utilizando la pila LEMP.
 
-#### Screencash
+#### Screencash privado de youtube
 
-[https://drive.google.com/file/d/1iXsMHb-9BO-QVK44BdARj6-Dn9mr1Hgl/view?usp=drive_link](https://drive.google.com/file/d/1IayJ1nUJ-XXJg4xZXCXWgl8TE-kIr21c/view?usp=drive_link)https://drive.google.com/file/d/1IayJ1nUJ-XXJg4xZXCXWgl8TE-kIr21c/view?usp=drive_link
+[[https://drive.google.com/file/d/1iXsMHb-9BO-QVK44BdARj6-Dn9mr1Hgl/view?usp=drive_link](https://drive.google.com/file/d/1IayJ1nUJ-XXJg4xZXCXWgl8TE-kIr21c/view?usp=drive_link)https://drive.google.com/file/d/1IayJ1nUJ-XXJg4xZXCXWgl8TE-kIr21c/view?usp=drive_link](https://youtu.be/GLIud1efhiI)https://youtu.be/GLIud1efhiI
